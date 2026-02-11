@@ -1,0 +1,4 @@
+action initialization viene creato in AnaEx01.cc, gli do come parametro il filename
+runaction viene creato in action initialization, gli do come parametro	il filename
+histomanager viene creato in runaction, gli do come parametro  il filename
+in histomanager->Save uso il filename, fine
