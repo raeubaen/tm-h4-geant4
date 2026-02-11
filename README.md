@@ -1,5 +1,5 @@
 # tm-h4-geant4
-
+```
 #originally used for different stuff
 
 #adapting to explore the idea of seeing pi0->yy at h4 with CMS ECAL SM36
@@ -20,3 +20,4 @@ cmake -S ../pi0yy-cms-ecal-h4 -B .
 make
 
 ./AnaEx01 AnaEx01.in out.root $RANDOM
+```
