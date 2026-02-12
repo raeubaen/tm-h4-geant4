@@ -18,7 +18,7 @@
 /control/verbose 2
 #
 
-/gun/particle e+
-/gun/energy 43700 MeV
+/gun/particle pi+
+/gun/energy 250 GeV
 #/run/beamOn 1000000000
-/run/beamOn 10000000
+/run/beamOn 1000

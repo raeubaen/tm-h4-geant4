@@ -64,9 +64,9 @@ private:
    HistoManager* fHistoManager  = nullptr;
 
    map<string, vector<float>> fMap;
-   int fNpart, fFillPos, fFillNeg, fTotPos, fTotNeg, fTotHit[4];
+   int fNpart, fFillPos, fFillNeg, fTotPos, fTotNeg, fTotHit[1];
    G4int fPrintModulo = 1000000;
-   double fTotEnergy, fChargEnergy, fZpos[4]={-1396, -196, 1004, 2204};
+   double fTotEnergy, fChargEnergy, fZpos[1]={2525};
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

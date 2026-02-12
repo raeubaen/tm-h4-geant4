@@ -93,10 +93,10 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4Material* fGapMaterial = nullptr;
     G4Material* fDefaultMaterial = nullptr;
 
-    G4int      fNbOfLayers = 24;
-    G4double   fAbsorberThickness = 4.*CLHEP::mm;
-    G4double   fGapThickness = 196.*CLHEP::mm;
-    G4double   fCalorSizeXY = 20.*CLHEP::cm;
+    G4int      fNbOfLayers = 1;
+    G4double   fAbsorberThickness = 5.*CLHEP::cm;
+    G4double   fGapThickness = 5.*CLHEP::m;
+    G4double   fCalorSizeXY = 50.*CLHEP::cm;
 
     G4double   fCalorThickness = 0.;    // will be computed
     G4double   fLayerThickness= 0.;     // will be computed

@@ -59,8 +59,8 @@ DetectorConstruction::DetectorConstruction()
 
   // materials
   DefineMaterials();
-  SetAbsorberMaterial("G4_Li");
-  SetGapMaterial("G4_Galactic");
+  SetAbsorberMaterial("G4_Fe");
+  SetGapMaterial("G4_AIR");
 
   // create commands for interactive definition of the calorimeter
   fDetectorMessenger = new DetectorMessenger(this);
@@ -88,8 +88,8 @@ void DetectorConstruction::DefineMaterials()
   //
   G4NistManager* man = G4NistManager::Instance();
   fDefaultMaterial = man->FindOrBuildMaterial("G4_Galactic");
-  man->FindOrBuildMaterial("G4_Li");
-  man->FindOrBuildMaterial("G4_Air");
+  man->FindOrBuildMaterial("G4_Fe");
+  man->FindOrBuildMaterial("G4_AIR");
 
   // print table
   //

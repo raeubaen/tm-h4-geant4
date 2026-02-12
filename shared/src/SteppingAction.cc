@@ -57,13 +57,14 @@ SteppingAction::~SteppingAction() = default;
 void SteppingAction::UserSteppingAction(const G4Step* aStep)
 {
 
-  //cerr << aStep->GetPostStepPoint()->GetPosition()[2]/CLHEP::mm << endl;
 
   double x = aStep->GetPostStepPoint()->GetPosition()[0]/CLHEP::mm;
   double y = aStep->GetPostStepPoint()->GetPosition()[1]/CLHEP::mm;
   double z = aStep->GetPostStepPoint()->GetPosition()[2]/CLHEP::mm;
 
-  if(   (  abs(x)<15 && abs(y) < 15 && ( (z == -1396) || (z == -196) || (z==1004) || (z==2204) )  ) || (z==2400)  ){
+  //if (z > 2450) cerr << aStep->GetPostStepPoint()->GetPosition()[2]/CLHEP::mm << endl;
+
+  if( z == 2525 ) {
 
     G4Track* track = (G4Track*)(aStep->GetTrack());
 
